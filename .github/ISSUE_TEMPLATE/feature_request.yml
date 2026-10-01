@@ -1,0 +1,30 @@
+name: Feature Request
+description: Propose a new capability or functional enhancement
+title: "[FEATURE]: "
+labels: ["type: feature", "status: triage-needed"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: What problem or limitation are you facing?
+      placeholder: "I am unable to..."
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution / Ideal Workflow
+      description: Describe how you would like this feature to work.
+    validations:
+      required: true
+  - type: dropdown
+    id: persona
+    attributes:
+      label: Primary Target Persona
+      options:
+        - End-User Experience
+        - Admin / Enterprise Operations
+        - Developer / API Integration
+    validations:
+      required: true
